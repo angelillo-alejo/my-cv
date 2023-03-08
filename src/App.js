@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {CV} from './CV/CV'
+import { useState } from 'react';
+import Hero from './components/Hero';
+import About from './components/About';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import More from './components/More';
+
+const { hero, education, experience, languages, habilities, volunteer } = CV;
 
 function App() {
+  console.log (CV);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Hero hero={hero}/>
+    <About hero={hero}/>
+    <Education education={education}/>
+    <Experience experience={experience}/>
+    <More	
+          languages={languages}
+	        habilities={habilities}
+	        volunteer={volunteer}/>
+         
     </div>
   );
 }
