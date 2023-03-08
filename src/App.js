@@ -11,6 +11,7 @@ import More from './components/More';
 const { hero, education, experience, languages, habilities, volunteer } = CV;
 
 function App() {
+  const [showEducation, setShowEducation] = useState(true);
   console.log (CV);
   return (
     <div className="App">
@@ -22,8 +23,29 @@ function App() {
           languages={languages}
 	        habilities={habilities}
 	        volunteer={volunteer}/>
+          <button
+              className="custom-btn btn-4"
+              onClick={() => setShowEducation(true)}
+            >
+              Education
+            </button>
+            <button
+              className="custom-btn btn-4"
+              onClick={() => setShowEducation(false)}
+            >
+              Experience
+            </button>
+    ...
+      <div>
+        {showEducation ? (
+          <Education education={education} />
+        ) : (
+          <Experience experience={experience} />
+        )}
+      </div>
          
     </div>
+    
   );
 }
 
