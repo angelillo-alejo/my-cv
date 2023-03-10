@@ -1,15 +1,15 @@
-import React from 'react';
+//import React from 'react';
 
 export const CV = {
     hero: {
-      name: "Anthony",
-      adress: "Edward Stark",
-      city: "Avengers Tower / New York",
-      email: "tony@starkindustries.com",
-      birthDate: "29/05/1970",
+      name: "Angel",
+      adress: "Alejo",
+      city: "Cordoba / Andalucia",
+      email: "angelilloalejo@gmail.com",
+      birthDate: "09/01/1982",
       phone: "(+12) 767333841",
       image: "https://i.imgur.com/ZQAkED3.png",
-      gitHub: "https://github.com/tonystark",
+      gitHub: "https://github.com/angelillo-alejo",
       aboutMe: [
         {
           info: "🤖 My armor, it was never a distraction or a hobby, it was a cocoon. I am Iron Man.",
@@ -18,7 +18,7 @@ export const CV = {
           info: "🔩 CEO of Stark Industries.",
         },
         {
-          info: "🕶 Genius, billionaire, playboy, philanthropist.",
+          info: "🕶 Genius, billionaire, philanthropist.",
         },
         {
           info: "🦾 I do have a responsibility to keep my inventions from evil hands – but I have a greater responsibility to oppose that evil any way I can.",
@@ -27,19 +27,19 @@ export const CV = {
     },
     education: [
       {
-        name: "Master in physics",
-        date: "1985",
-        where: "MIT",
+        name: "Bootcamp Frontend developer",
+        date: "2023",
+        where: "Madrid",
       },
       {
-        name: "Aeronautical Engineering",
-        date: "1995",
-        where: "ATI Vaughn College",
+        name: "Tecnico Superior en Desarrollo de Aplicaciones Web (DAW)",
+        date: "2021-2023",
+        where: "Academia Ilerna",
       },
       {
-        name: "Weapons Engineer",
-        date: "1998",
-        where: "Firearm Collegue, Queens",
+        name: "Certificado Oficial de Google en Desarrollo Web",
+        date: "2022",
+        where: "OnLine",
       },
     ],
     experience: [
@@ -60,18 +60,18 @@ export const CV = {
     ],
     languages: {
       language: "English",
-      wrlevel: "Native",
-      splevel: "Native",
+      wrlevel: "Actualmente aprendiendo",
+      splevel: "",
     },
     habilities: [
-      "Robotics",
-      "Robot Programming",
-      "Physics",
-      "Weaponery",
-      "Engineer",
-      "Money",
-      "Dating",
-      "Saving the world",
+      "HTML5",
+      "CSS3",
+      "Boostrap",
+      "SASS",
+      "JavaScript",
+      "TypeScript",
+      "Angular",
+      "React",
     ],
     volunteer: [
       {

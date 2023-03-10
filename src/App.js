@@ -12,7 +12,7 @@ const { hero, education, experience, languages, habilities, volunteer } = CV;
 
 function App() {
   const [showEducation, setShowEducation] = useState(true);
-  console.log (CV);
+  //console.log (CV);
   return (
     <div className="App">
     <Hero hero={hero}/>
@@ -34,14 +34,18 @@ function App() {
               onClick={() => setShowEducation(false)}
             >
               Experience
-            </button>
-    ...
+            </button> 
       <div>
         {showEducation ? (
           <Education education={education} />
         ) : (
           <Experience experience={experience} />
         )}
+      </div>
+      <div>
+      {/* crearemos un div posteriormente con un ternario que nos muestre 
+      Education si showEducation = true y nos muestre Experience si showEducation = false. */}
+          
       </div>
          
     </div>

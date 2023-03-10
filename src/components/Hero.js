@@ -8,16 +8,16 @@ const Hero = ({ hero }) => {
       <div className="card">
       <h2>
         {hero.name} {hero.adress}
-      </h2>
-        <p>🗺️{hero.city} </p>
+      </h2> 
+        <p>🇪🇸{hero.city} </p>
         <p>🗓️{hero.birthDate}</p>
         <p>
           📧
           <a href={"mailto:" + hero.email}>
-          tony@starkindustries.com
+          angelilloalejo@gmail.com
           </a>
         </p>
-        <p>📱 {hero.phone}</p>
+        <p>📱{hero.phone}</p>
         <p>💾<a href={hero.gitHub}>
             GitHub
           </a></p>

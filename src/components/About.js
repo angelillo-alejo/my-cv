@@ -1,14 +1,21 @@
 import './About.css';
 
-function About() {
+const About =({ hero }) => {
     return (
-      <div className="App">
-  
-      </div>
+      <div className="About card">
+      {hero.aboutMe.map((item) =>{
+        return (
+          <div key={JSON.stringify(item)}>
+          <p className='name'> {item.info}</p>
+          </div>
+        );
+      })}
+    </div>
     );
   }
   
   export default About;
+  //más datos sobre nosotros.
 
   /*
   *Tal y como aparece en el código, le estamos pasando por props la información que 

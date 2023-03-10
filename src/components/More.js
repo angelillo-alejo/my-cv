@@ -1,13 +1,27 @@
 import './More.css';
-function More() {
+const More =({languages, habilities}) => {
     return (
-      <div className="App">
-  
+      <div className="More Card">
+      <p>🇬🇧{languages.language}. {languages.wrlevel} </p>
+      {/* <p>{languages.wrlevel} </p> 
+      <p>{languages.splevel}</p> */}
+      {habilities.map ((item) => {
+        return (
+          <div key={JSON.stringify(item)}>
+          <p className="name">{item}</p>
+          </div>
+        )
+      })}
       </div>
     );
   }
+
+
+  
   
   export default More;
+  //idiomas, skills y, por ejemplo, voluntariados.
+
   
   /*
   Al componente <More/> le estamos pasando por prop languages, habilities y volunteer porque 
